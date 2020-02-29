@@ -7,3 +7,4 @@
   5. Use onResume life cycle to refresh my fav grid view.
   6. When an item is selected, the cell will be highlighted.
   7. Add hyperlink on picture when you tap on the picture, you will be directed to the webpage.
+  8. Add splash screen and Application icon
