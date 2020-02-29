@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B8CB5"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:horizontalSpacing="6dp"
+        android:listSelector="#779a9e"
+        android:numColumns="2"
+        android:verticalSpacing="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSort" />
+
+    <EditText
+        android:id="@+id/txtKeywords"
+        android:layout_width="180dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="Please enter your keywords here"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSearch" />
+
+    <TextView
+        android:id="@+id/lblSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="176dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="83dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@android:string/search_go"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtKeywords"
+        app:layout_constraintTop_toTopOf="@+id/txtKeywords" />
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Sort"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtKeywords"
+        app:layout_constraintEnd_toStartOf="@+id/txtKeywords"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtKeywords" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
