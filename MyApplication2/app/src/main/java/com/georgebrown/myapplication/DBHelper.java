@@ -3,9 +3,6 @@ package com.georgebrown.myapplication;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 public class DBHelper extends SQLiteOpenHelper {
 
     // Table Name
@@ -19,6 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String REST_NAME = "rest_name";
     public static final String ADDRESS = "address";
     public static final String COMMENT = "comment";
+    public static final String URL = "url";
 
     // Database Information
     static final String DB_NAME = "MyFav.DB";
@@ -34,6 +32,7 @@ public class DBHelper extends SQLiteOpenHelper {
             CREATED_ON + " TEXT , " +
             REST_NAME + " TEXT , " +
             ADDRESS + " TEXT , " +
+            URL + " TEXT , " +
             COMMENT + " TEXT);";
 
     public DBHelper(Context context) {

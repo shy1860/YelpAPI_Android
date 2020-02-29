@@ -1,9 +1,11 @@
 package com.georgebrown.myapplication;
 
-public class Review {
+import java.io.Serializable;
+//Used to define review class to contain informations
+public class Review implements Serializable {
     private String postedAt;
     private String text;
-
+    private String userName;
     @Override
     public String toString() {
         return "Review{" +
@@ -21,7 +23,6 @@ public class Review {
         this.userName = userName;
     }
 
-    private String userName;
     public String getPostedAt() {
         return postedAt;
     }
